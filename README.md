@@ -29,7 +29,7 @@ EFI可直接用于安装和日常使用
 
     效果：
 
-    ![效果](https://ws2.sinaimg.cn/large/006tNc79gy1fkrr6s0er6j30hs0dbjrk.jpg)
+    ![设置.png](https://i.loli.net/2017/10/26/59f199e85deb7.png)
 
 3. 网卡驱动
 
@@ -47,7 +47,7 @@ EFI可直接用于安装和日常使用
 
 2. 在快捷键里设置以下键位
 
-    ![](https://ws4.sinaimg.cn/large/006tNc79gy1fkrrelwuxbj30sg0c0dge.jpg)
+    ![快捷键.png](https://i.loli.net/2017/10/26/59f19a6078345.png)
 
 3. 触控板驱动+手势：
 
