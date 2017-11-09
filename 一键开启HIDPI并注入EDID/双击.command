@@ -8,7 +8,12 @@ function _init(){
 
     Vid=$(echo "obase=16;$VendorID" | bc | tr 'A-Z' 'a-z')
     Pid=$(echo "obase=16;$ProductID" | bc | tr 'A-Z' 'a-z')
-    EDid=$(echo $EDID | xxd -r -p | base64)
+
+    edID=$(echo $EDID | sed 's/../a5/21')
+    edID=$(echo $edID | sed 's/../1d/22')
+    edID=$(echo $edID | sed 's/../12/23')
+
+    EDid=$(echo $edID | xxd -r -p | base64)
     thisDir=$(dirname $0)
     thatDir="/System/Library/Displays/Contents/Resources/Overrides"
 }
@@ -31,11 +36,12 @@ cat > "$dpiFile" <<-\HIDPI
     <integer>VID</integer>
     <key>DisplayProductName</key>
     <string>Color LCD</string>
+    <key>IODisplayEDID</key>
+    <data>
+        EDid
+    </data>
     <key>scale-resolutions</key>
     <array>
-        <data>
-        AAAPAAAACHAA
-        </data>
         <data>
         AAAMgAAABwgA
         </data>
@@ -49,14 +55,9 @@ cat > "$dpiFile" <<-\HIDPI
 </plist>
 HIDPI
 
-    # <data>
-    #     EDid
-    # </data> 
-    # 
-    # sed -i '' "s:EDid:${EDid}:g" $dpiFile
-
     sed -i '' "s/VID/$VendorID/g" $dpiFile
     sed -i '' "s/PID/$ProductID/g" $dpiFile
+    sed -i '' "s:EDid:${EDid}:g" $dpiFile
     sed -i '' "s/VID/$Vid/g" $thisDir/tmp/Icons.plist
     sed -i '' "s/PID/$Pid/g" $thisDir/tmp/Icons.plist
 
