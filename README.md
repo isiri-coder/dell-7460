@@ -19,6 +19,8 @@ dell-7460-7560-hackintosh
 此合集适用于戴尔燃7000系列型号为7460/7560的笔记本电脑
 EFI可直接用于安装和日常使用
 
+SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
+
 文件列表：
 
 1. EFI (必须)
@@ -82,8 +84,11 @@ EFI可直接用于安装和日常使用
 
 - 更新 clover 4297
 - 更新 黑果小兵的ALCPlugFix
-- 更新HIDPI脚本，之前的版本虽然模糊过渡自然，但是睡眠唤醒闪屏，鱼与熊掌不可兼得
+- 更新 HIDPI脚本，之前的版本虽然模糊过渡自然，但是睡眠唤醒闪屏，鱼与熊掌不可兼得
+- 适配 MacOS 10.13.2
 - Lilu相关常规更新
-- SSDT来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
+- 修复iTunes退出问题
+- 可能修复了关机亮度保存，开机亮度恢复问题
+- SSDT来自hotpath[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
 
 
