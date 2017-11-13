@@ -186,9 +186,11 @@
 				<key>PStates</key>
 				<false/>
 				<key>PluginType</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>NoDynamicExtract</key>
+			<true/>
+			<key>NoOemTableId</key>
 			<true/>
 		</dict>
 		<key>SortedOrder</key>
