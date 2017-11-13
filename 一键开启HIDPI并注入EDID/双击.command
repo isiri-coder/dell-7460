@@ -9,9 +9,7 @@ function _init(){
     Vid=$(echo "obase=16;$VendorID" | bc | tr 'A-Z' 'a-z')
     Pid=$(echo "obase=16;$ProductID" | bc | tr 'A-Z' 'a-z')
 
-    edID=$(echo $EDID | sed 's/../a5/21')
-    edID=$(echo $edID | sed 's/../1d/22')
-    edID=$(echo $edID | sed 's/../12/23')
+    edID=$(echo $EDID | sed 's/../b5/21')
 
     EDid=$(echo $edID | xxd -r -p | base64)
     thisDir=$(dirname $0)

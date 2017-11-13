@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>#Comment</key>
+	<string>This file is for 10.12.6+ with native KabyLake support</string>
 	<key>ACPI</key>
 	<dict>
+		<key>AutoMerge</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>Debug</key>
@@ -160,10 +164,6 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
 				<string>BGRT</string>
 			</dict>
 			<dict>
@@ -173,12 +173,6 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>xh_rvp10</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -191,7 +185,11 @@
 				<false/>
 				<key>PStates</key>
 				<false/>
+				<key>PluginType</key>
+				<false/>
 			</dict>
+			<key>NoDynamicExtract</key>
+			<true/>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
@@ -210,12 +208,15 @@
 			<string>SSDT-XHC.aml</string>
 			<string>SSDT-IMEI.aml</string>
 			<string>SSDT-GPRW.aml</string>
+			<string>SSDT-XWAK.aml</string>
+			<string>SSDT-UPRW.aml</string>
+			<string>SSDT-PTSWAK.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 kext-dev-mode=1 -disablegfxfirmware</string>
+		<string>dart=0 kext-dev-mode=1 -disablegfxfirmware shikigva=16</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -233,8 +234,6 @@
 	</dict>
 	<key>CPU</key>
 	<dict>
-		<key>HWPEnable</key>
-		<true/>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
@@ -244,6 +243,8 @@
 		<dict>
 			<key>AFGLowPowerState</key>
 			<true/>
+			<key>Inject</key>
+			<string>56</string>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -392,10 +393,6 @@
 	</dict>
 	<key>RtVariables</key>
 	<dict>
-		<key>BooterConfig</key>
-		<string>0x28</string>
-		<key>CsrActiveConfig</key>
-		<string>0x67</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
