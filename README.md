@@ -3,6 +3,17 @@ dell-7460-7560-hackintosh
 
 戴尔燃7000黑苹果安装和日常使用EFI
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**目录**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [说明](#%E8%AF%B4%E6%98%8E)
+- [使用方法](#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
+- [其他说明](#%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E)
+- [Change log](#change-log)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ### 说明
 
 此合集适用于戴尔燃7000系列型号为7460/7560的笔记本电脑
@@ -65,7 +76,7 @@ EFI可直接用于安装和日常使用
 四指向下轻扫：显示桌面
 ```
 
-## Change log
+### Change log
 
 2017-11-13
 
