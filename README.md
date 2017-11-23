@@ -80,6 +80,10 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2017-11-24
+
+- 重新制作 SSDT hotpath 
+
 2017-11-13
 
 - 更新 clover 4297
@@ -89,6 +93,6 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 - Lilu相关常规更新
 - 修复iTunes退出问题
 - 可能修复了关机亮度保存，开机亮度恢复问题
-- SSDT来自hotpath[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
+- SSDT hotpath来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
 
 
