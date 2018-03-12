@@ -88,12 +88,12 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 - 常规更新clover
 - 更新 SSDT hotpath 
-- 支持 MacOS 13.4 beta
+- 支持 MacOS 10.13.4 beta4
 
 2017-12-9
 
 - 常规更新clover
-- 支持13.2
+- 支持 MacOS 10.13.2
 
 2017-11-24
 
