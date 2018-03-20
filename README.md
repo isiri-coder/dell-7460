@@ -16,7 +16,7 @@ dell-7460-7560-hackintosh
 
 ### 说明
 
-此合集适用于戴尔燃7000系列型号为7460/7560的笔记本电脑
+此合集适用于戴尔燃7000系列第一第二代型号为7460/7560/7472/7572的笔记本电脑
 EFI可直接用于安装和日常使用
 
 SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
@@ -84,10 +84,14 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-03-20
+
+- 增加燃2代的支持
+
 2018-03-12
 
 - 常规更新clover
-- 更新 SSDT hotpath 
+- 更新 SSDT hotpatch 
 - 支持 MacOS 10.13.4 beta4
 
 2017-12-9
@@ -97,7 +101,7 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 2017-11-24
 
-- 重新制作 SSDT hotpath 
+- 重新制作 SSDT hotpatch 
 
 2017-11-13
 
@@ -108,6 +112,6 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 - Lilu相关常规更新
 - 修复iTunes退出问题
 - 可能修复了关机亮度保存，开机亮度恢复问题
-- SSDT hotpath来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
+- SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
 
 
