@@ -84,6 +84,11 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-03-27
+
+- 更新HIDPI脚本，添加不打补丁的选项
+- 可能解决了燃2代的的唤醒问题，没有机器无法测试
+
 2018-03-20
 
 - 增加燃2代的支持

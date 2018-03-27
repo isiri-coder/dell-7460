@@ -41,7 +41,7 @@ cat << EOF
 (5) 保持原样
 
 EOF
-read -p "输入你的选择[1~4]: " logo
+read -p "输入你的选择[1~5]: " logo
 case $logo in
     1) Picon=$imacicon
 RP=("33" "68" "160" "90")
@@ -77,6 +77,57 @@ fi
 }
 
 function enable_hidpi(){
+    
+    #
+    choose_icon
+    mkdir -p $thisDir/tmp/DisplayVendorID-$Vid
+    dpiFile=$thisDir/tmp/DisplayVendorID-$Vid/DisplayProductID-$Pid
+    sudo chmod -R 777 $thisDir
+
+# 
+cat > "$dpiFile" <<-\HIDPI
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>DisplayProductID</key>
+            <integer>PID</integer>
+        <key>DisplayVendorID</key>
+            <integer>VID</integer>
+        <key>DisplayProductName</key>
+            <string>Color LCD</string>
+        <key>scale-resolutions</key>
+            <array>
+                <data>
+                AAAPAAAACHAA
+                </data>
+                <data>
+                AAAMgAAABkAA
+                </data>
+                <data>
+                AAAMgAAABwgA
+                </data>
+                <data>
+                AAALQAAABlQA
+                </data>
+            </array>
+        <key>target-default-ppmm</key>
+            <real>10.1510574</real>
+    </dict>
+</plist>
+HIDPI
+
+    #
+    sed -i '' "s/VID/$VendorID/g" $dpiFile
+    sed -i '' "s/PID/$ProductID/g" $dpiFile
+
+    sudo cp -r $thisDir/tmp/* $thatDir/
+    rm -rf $thisDir/tmp
+    echo "开启成功，重启生效"
+    echo "首次重启开机logo会变得巨大，之后就不会了"
+}
+
+function enable_hidpi_with_patch(){
     
     #
     choose_icon
@@ -139,15 +190,18 @@ cat << EOF
 ----------------------------------------
 |*************** HIDPI ****************|
 ----------------------------------------
-(1) 开启HIDPI（同时注入修复花屏后的EDID）
-(2) 关闭HIDPI
+(1) 开启HIDPI（不做其他修改）
+(2) 开启HIDPI（同时注入修复花屏后的EDID）
+(3) 关闭HIDPI
 
 EOF
-read -p "输入你的选择[1~2]: " input
+read -p "输入你的选择[1~3]: " input
 case $input in
     1) enable_hidpi
 ;;
-2) sudo rm -rf $thatDir/DisplayVendorID-$Vid && echo "已关闭，重启生效"
+2) enable_hidpi_with_patch
+;;
+3) sudo rm -rf $thatDir/DisplayVendorID-$Vid && echo "已关闭，重启生效"
 ;;
 *) echo "拜拜";
 exit 0

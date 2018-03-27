@@ -59,34 +59,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change BRT6 to BRTX</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					IEJSVDY=
-					</data>
-					<key>Replace</key>
-					<data>
-					IEJSVFg=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT0 to SATA, optionally pair with SSDT-SATA.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change LPC to LPCB</string>
 					<key>Disabled</key>
 					<false/>
@@ -97,6 +69,20 @@
 					<key>Replace</key>
 					<data>
 					TFBDQg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change BRT6 to BRTX</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					IEJSVDY=
+					</data>
+					<key>Replace</key>
+					<data>
+					IEJSVFg=
 					</data>
 				</dict>
 				<dict>
@@ -115,44 +101,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
+					<string>change SAT0 to SATA, optionally pair with SSDT-SATA.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					R0ZYMA==
+					U0FUMA==
 					</data>
 					<key>Replace</key>
 					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					TUVJXw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
+					U0FUQQ==
 					</data>
 				</dict>
 			</array>
@@ -162,10 +120,6 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>MCFG</string>
 			</dict>
 		</array>
 		<key>ResetAddress</key>
@@ -182,7 +136,6 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
-			<string>SSDT-RMCF.aml</string>
 			<string>SSDT-DGPspoof.aml</string>
 			<string>SSDT-IGPU.aml</string>
 			<string>SSDT-PNLF.aml</string>
