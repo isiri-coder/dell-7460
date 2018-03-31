@@ -19,7 +19,7 @@ DICON="com\.apple\.cinema-display"
 
 imacicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a032.tiff"
 
-mbpicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a030-9d9da0.tiff"
+mbpicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a030-e1e1df.tiff"
 
 mbicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a028-9d9da0.tiff"
 
