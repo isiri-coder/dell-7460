@@ -24,7 +24,7 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 文件列表：
 
 1. EFI (必须)
-2. 一键开启HIDPI并注入EDID (可选)
+2. [HIDPI已转移到单独的仓库](https://github.com/xzhih/one-key-hidpi) (可选)
 3. 网卡驱动 (可选)
 4. 黑果小兵的ALCPlugFix (详细说明[来源传送门](https://github.com/daliansky/ALCPlugFix/blob/master/README.md))
 
@@ -32,7 +32,9 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 **1**. EFI
 
-安装时：使用transmac写入镜像至U盘后，拷贝EFI到U盘ESP分区中，重启按F12选择U盘启动即可开始安装
+安装时（不保证能顺利安装）：使用transmac写入镜像至U盘后，拷贝EFI到U盘ESP分区中，重启按F12选择U盘启动即可开始安装
+
+具体安装教程请看[我的教程](https://zhih.me/2018/hackintosh-install-guide/)
 
 日常使用：安装好系统后，使用 `clover configurator` 挂载MacOS所在硬盘的ESP分区，把EFI拷贝进去，重启按F2进入BIOS设置此引导为首选，保存重启即可
 
@@ -44,7 +46,7 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 此一键命令可开启接近原生的HIDPI设置，不需要RDM软件即可在系统显示器设置中设置
 
-双击安装命令即可进入设置，可选择安装或卸载
+仓库地址：[一键开启HIDPI](https://github.com/xzhih/one-key-hidpi)
 
 效果：
 
@@ -83,6 +85,12 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 ```
 
 ### Change log
+
+2018-04-03 
+
+- 合并燃1代2代EFI
+- 更新clover
+- 转移HIDPI脚本，更方便使用
 
 2018-03-27
 
