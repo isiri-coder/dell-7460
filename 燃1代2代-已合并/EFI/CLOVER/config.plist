@@ -8,11 +8,6 @@
 		<true/>
 		<key>DSDT</key>
 		<dict>
-			<key>Fixes</key>
-			<dict>
-				<key>FixHeaders</key>
-				<true/>
-			</dict>
 			<key>Patches</key>
 			<array>
 				<dict>
@@ -113,6 +108,20 @@
 					U0FUQQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>PRW 6D03 TO 6D00</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					Cm0KAw==
+					</data>
+					<key>Replace</key>
+					<data>
+					Cm0KAA==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -130,6 +139,8 @@
 				<string>MATS</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>ResetAddress</key>
 		<string>0xB2</string>
 		<key>ResetValue</key>
@@ -386,6 +397,24 @@
 				<key>Replace</key>
 				<data>
 				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>1536MB -&gt; 2048MB for HD620 Mobile</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				AQMDAwAAIAIAAAAAAAAAYA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleIntelKBLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AQMDAwAAIAIAAAAAAAAAgA==
 				</data>
 			</dict>
 		</array>

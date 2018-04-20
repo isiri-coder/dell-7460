@@ -86,30 +86,36 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-04-20
+
+- 更新 clover
+- Lilu 相关常规更新
+- HD620 修改核显显示 2048MB，自己在 config 中打开
+
 2018-04-03 
 
-- 合并燃1代2代EFI
-- 更新clover
-- 转移HIDPI脚本，更方便使用
+- 合并燃 1 代 2 代 EFI
+- 更新 clover
+- 转移 HIDPI 脚本，更方便使用
 
 2018-03-27
 
-- 更新HIDPI脚本，添加不打补丁的选项
-- 可能解决了燃2代的的唤醒问题，没有机器无法测试
+- 更新 HIDPI 脚本，添加不打补丁的选项
+- 可能解决了燃 2 代的的唤醒问题，没有机器无法测试
 
 2018-03-20
 
-- 增加燃2代的支持
+- 增加燃 2 代的支持
 
 2018-03-12
 
-- 常规更新clover
+- 常规更新 clover
 - 更新 SSDT hotpatch 
 - 支持 MacOS 10.13.4 beta4
 
 2017-12-9
 
-- 常规更新clover
+- 常规更新 clover
 - 支持 MacOS 10.13.2
 
 2017-11-24
@@ -119,12 +125,12 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 2017-11-13
 
 - 更新 clover 4297
-- 更新 黑果小兵的ALCPlugFix
-- 更新 HIDPI脚本，之前的版本虽然模糊过渡自然，但是睡眠唤醒闪屏，鱼与熊掌不可兼得
+- 更新 黑果小兵的 ALCPlugFix
+- 更新 HIDPI 脚本，之前的版本虽然模糊过渡自然，但是睡眠唤醒闪屏，鱼与熊掌不可兼得
 - 适配 MacOS 10.13.2
-- Lilu相关常规更新
-- 修复iTunes退出问题
+- Lilu 相关常规更新
+- 修复 iTunes 退出问题
 - 可能修复了关机亮度保存，开机亮度恢复问题
-- SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
+- SSDT hotpatch 来自 [RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
 
 
