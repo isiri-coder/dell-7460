@@ -86,6 +86,10 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-04-03
+
+- 劳动节更新
+
 2018-04-20
 
 - 更新 clover

@@ -122,6 +122,20 @@
 					Cm0KAA==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change LPC to LPCB</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					TFBDXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					TFBDQg==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -152,26 +166,32 @@
 				<key>PluginType</key>
 				<true/>
 			</dict>
+			<key>NoOemTableId</key>
+			<true/>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
 			<string>SSDT-Dell_FN.aml</string>
-			<string>SSDT-XOSI.aml</string>
-			<string>SSDT-SATA.aml</string>
 			<string>SSDT-DGPspoof.aml</string>
-			<string>SSDT-IGPU.aml</string>
-			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-GPRW.aml</string>
+			<string>SSDT-IGPU.aml</string>
+			<string>SSDT-LPC.aml</string>
+			<string>SSDT-PNLF.aml</string>
+			<string>SSDT-SATA.aml</string>
+			<string>SSDT-XHC.aml</string>
+			<string>SSDT-XOSI.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1</string>
+		<string>dart=0 nv_disable=1 kext-dev-mode=1 -disablegfxfirmware</string>
 		<key>DefaultVolume</key>
 		<string>macOS</string>
-		<key>NoEarlyProgress</key>
+		<key>NeverHibernate</key>
 		<true/>
+		<key>NoEarlyProgress</key>
+		<false/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
@@ -265,13 +285,15 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleRTC</key>
-		<false/>
+		<true/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 		</array>
+		<key>KernelLapic</key>
+		<true/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KernelToPatch</key>
