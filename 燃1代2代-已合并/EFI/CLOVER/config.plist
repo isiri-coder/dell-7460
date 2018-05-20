@@ -82,20 +82,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R1BSVwI=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFBSVwI=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change SAT0 to SATA, optionally pair with SSDT-SATA.aml</string>
 					<key>Disabled</key>
 					<false/>
@@ -120,6 +106,20 @@
 					<key>Replace</key>
 					<data>
 					Cm0KAA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					R1BSVwI=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwI=
 					</data>
 				</dict>
 				<dict>
@@ -189,20 +189,15 @@
 		<key>DefaultVolume</key>
 		<string>macOS</string>
 		<key>NeverHibernate</key>
-		<true/>
-		<key>NoEarlyProgress</key>
 		<false/>
+		<key>NoEarlyProgress</key>
+		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>1</integer>
 		<key>XMPDetection</key>
 		<false/>
-	</dict>
-	<key>BootGraphics</key>
-	<dict>
-		<key>UIScale</key>
-		<integer>1</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -266,6 +261,8 @@
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
+		<key>ShowOptimus</key>
+		<true/>
 		<key>Theme</key>
 		<string>a</string>
 	</dict>
@@ -284,6 +281,8 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>AppleIntelCPUPM</key>
+		<true/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
@@ -425,7 +424,7 @@
 				<key>Comment</key>
 				<string>1536MB -&gt; 2048MB for HD620 Mobile</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQMDAwAAIAIAAAAAAAAAYA==

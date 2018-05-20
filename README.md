@@ -34,7 +34,7 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 安装时（不保证能顺利安装）：使用transmac写入镜像至U盘后，拷贝EFI到U盘ESP分区中，重启按F12选择U盘启动即可开始安装
 
-具体安装教程请看[我的教程](https://zhih.me/2018/hackintosh-install-guide/)
+具体安装教程请看[我的教程](https://zhih.me/hackintosh-install-guide/)
 
 日常使用：安装好系统后，使用 `clover configurator` 挂载MacOS所在硬盘的ESP分区，把EFI拷贝进去，重启按F2进入BIOS设置此引导为首选，保存重启即可
 
