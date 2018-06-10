@@ -16,16 +16,15 @@ dell-7460-7560-hackintosh
 
 ### 说明
 
-此合集适用于戴尔燃7000系列第一第二代型号为7460/7560/7472/7572的笔记本电脑
-EFI可直接用于安装和日常使用
+此合集适用于戴尔燃 7000 系列第一第二代型号为 7460/7560/7472/7572 的笔记本电脑
 
 SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
 
 文件列表：
 
-1. EFI (必须)
-2. [HIDPI已转移到单独的仓库](https://github.com/xzhih/one-key-hidpi) (可选)
-3. 网卡驱动 (可选)
+1. EFI (可直接用于安装、升级和日常使用)
+2. [HIDPI已转移到单独的仓库](https://github.com/xzhih/one-key-hidpi) 
+3. 网卡驱动 (EFI 内已存在，不需要的可以删除)
 4. 黑果小兵的ALCPlugFix (详细说明[来源传送门](https://github.com/daliansky/ALCPlugFix/blob/master/README.md))
 
 ### 使用方法
@@ -85,6 +84,12 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 ```
 
 ### Change log
+
+2018-06-10
+
+- 更新 clover
+- Lilu 相关常规更新
+- 新增 10.14 beta 的支持，可能部分人装不上，我是装上了
 
 2018-04-30
 
