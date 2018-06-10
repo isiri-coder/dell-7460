@@ -16,7 +16,7 @@ dell-7460-7560-hackintosh
 
 ### 说明
 
-此合集适用于戴尔燃 7000 系列第一第二代型号为 7460/7560/7472/7572 的笔记本电脑
+此合集适用于戴尔燃 7000 系列第一第二代型号为 7460/7560/7472/7572 的笔记本电脑，不同 MacOS 版本已分开
 
 SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Config) 
 
