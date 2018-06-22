@@ -85,6 +85,12 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-06-23
+
+- 更新 clover
+- 使用 [ApfsDriverLoader.efi](https://github.com/acidanthera/ApfsSupportPkg) 加载  apfs.efi 
+- 回滚 `SSDT-DDGPU.aml`，这可能会拯救有独显机器的电池，Thanks BrunoGM [#13](https://github.com/xzhih/dell-7460-7560-hackintosh/issues/13)
+
 2018-06-10
 
 - 更新 clover

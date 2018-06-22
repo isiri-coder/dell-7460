@@ -186,7 +186,6 @@
 		<key>SortedOrder</key>
 		<array>
 			<string>SSDT-Dell_FN.aml</string>
-			<string>SSDT-DGPspoof.aml</string>
 			<string>SSDT-GPRW.aml</string>
 			<string>SSDT-IGPU.aml</string>
 			<string>SSDT-LPC.aml</string>
@@ -194,6 +193,10 @@
 			<string>SSDT-SATA.aml</string>
 			<string>SSDT-XHC.aml</string>
 			<string>SSDT-XOSI.aml</string>
+			<string>SSDT-ALS0.aml</string>
+			<string>SSDT-PCIList.aml</string>
+			<string>SSDT-SMBUS.aml</string>
+			<string>SSDT-DDGPU.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -301,7 +304,7 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
