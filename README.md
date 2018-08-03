@@ -85,6 +85,12 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-08-03
+
+- 更新 clover
+- 更新 lilu 相关
+- 10.13 EFI 最后一个版本，10.14 正式版发布后将在 10.14 文件夹更新
+
 2018-06-23
 
 - 更新 clover
