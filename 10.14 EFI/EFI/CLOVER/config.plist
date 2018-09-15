@@ -8,6 +8,11 @@
 		<true/>
 		<key>DSDT</key>
 		<dict>
+			<key>Fixes</key>
+			<dict>
+				<key>FixRegions</key>
+				<true/>
+			</dict>
 			<key>Patches</key>
 			<array>
 				<dict>
@@ -156,7 +161,7 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>MCFG</string>
+				<string>MATS</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -164,15 +169,11 @@
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>MATS</string>
+				<string>BGRT</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
 		<true/>
-		<key>ResetAddress</key>
-		<string>0xB2</string>
-		<key>ResetValue</key>
-		<string>0x73</string>
 		<key>SSDT</key>
 		<dict>
 			<key>Generate</key>
@@ -187,13 +188,11 @@
 		<array>
 			<string>SSDT-Dell_FN.aml</string>
 			<string>SSDT-GPRW.aml</string>
-			<string>SSDT-IGPU.aml</string>
 			<string>SSDT-LPC.aml</string>
 			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-SATA.aml</string>
 			<string>SSDT-XHC.aml</string>
 			<string>SSDT-XOSI.aml</string>
-			<string>SSDT-ALS0.aml</string>
 			<string>SSDT-PCIList.aml</string>
 			<string>SSDT-SMBUS.aml</string>
 			<string>SSDT-DDGPU.aml</string>
@@ -201,8 +200,6 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 kext-dev-mode=1 -disablegfxfirmware</string>
 		<key>DefaultVolume</key>
 		<string>macOS</string>
 		<key>NeverHibernate</key>
@@ -239,6 +236,100 @@
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
+		<key>LANInjection</key>
+		<true/>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAAWWQ==
+				</data>
+				<key>device-id</key>
+				<data>
+				FlkAAA==
+				</data>
+				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-busid</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-flags</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
+				</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con3-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con3-flags</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-memorycount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-pipecount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAwAQ==
+				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAwA==
+				</data>
+				<key>model</key>
+				<string>Intel Iris Plus Graphics 655</string>
+			</dict>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -249,6 +340,8 @@
 			<true/>
 			<key>Inject</key>
 			<true/>
+			<key>NameEH00</key>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<true/>
@@ -298,21 +391,17 @@
 		<key>Inject</key>
 		<dict>
 			<key>Intel</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<false/>
+		<true/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
-		<key>ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-		</array>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
@@ -328,8 +417,6 @@
 				<data>
 				ILniAAAADzA=
 				</data>
-				<key>MatchOS</key>
-				<string>10.11.x,10.12.x,10.13.x</string>
 				<key>Replace</key>
 				<data>
 				ILniAAAAkJA=
@@ -337,37 +424,23 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Debug kernel</string>
+				<string>Disable panic kext logging on 10.14 Release kernel (c) vit9696</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				sABMi1Xw
+				igKEwHRC
 				</data>
 				<key>MatchOS</key>
-				<string>10.13</string>
+				<string>10.14.x</string>
 				<key>Replace</key>
 				<data>
-				SIPEQF3D
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Release kernel</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				igKEwHRE
-				</data>
-				<key>MatchOS</key>
-				<string>10.13</string>
-				<key>Replace</key>
-				<data>
-				igKEwOtE
+				igKEwOtC
 				</data>
 			</dict>
 		</array>
+		<key>KernelXCPM</key>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -390,42 +463,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI-audio patch,port:0105,0x59160000</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAACHAQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQUJAAAIAACHAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audiopatch,port:0204,0x59160000</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AgQKAAAEAACHAQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AgQKAAAIAACHAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
@@ -444,91 +481,32 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>1536MB -&gt; 2048MB for HD620 Mobile</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AQMDAwAAIAIAAAAAAAAAYA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQMDAwAAIAIAAAAAAAAAgA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port 15-&gt;26</string>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.14 (credit Austere.J)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g32MEA==
+				dkZI/wUCUgg=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.13.0,10.13.1,10.13.2,10.13.3
-</string>
+				<string>10.14.x</string>
 				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
-				g32MGw==
+				60ZI/wUCUgg=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port 15-&gt;26</string>
+				<string>disable port limit in XHCI kext (credit PMHeart)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g32UDw+DlwQAAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.4,10.13.5</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g32UD5CQkJCQkA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port 15-&gt;26</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g32IDw+DpwQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g32IGg+DpwQ=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port 15-&gt;26</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g/sPD4MJBQAA
+				g/sPD4MDBQAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>

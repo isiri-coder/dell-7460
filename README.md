@@ -85,6 +85,12 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-09-15
+
+- 10.14 的 EFI 更新
+- 10.13 的 EFI 修复之前某些机器无法启动的问题，以后不再更新
+- 10.14 的 EFI 也可以在 10.13 使用
+
 2018-08-15
 
 - 更新 clover
@@ -94,7 +100,7 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 - 更新 clover
 - 更新 lilu 相关
-- 10.13 EFI 最后一个版本，10.14 正式版发布后将在 10.14 文件夹更新
+- 可能是 10.13 EFI 最后一个版本，10.14 正式版发布后将在 10.14 文件夹更新
 
 2018-06-23
 

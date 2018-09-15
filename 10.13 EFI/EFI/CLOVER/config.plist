@@ -8,6 +8,11 @@
 		<true/>
 		<key>DSDT</key>
 		<dict>
+			<key>Fixes</key>
+			<dict>
+				<key>FixRegions</key>
+				<true/>
+			</dict>
 			<key>Patches</key>
 			<array>
 				<dict>
@@ -156,7 +161,7 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>MCFG</string>
+				<string>MATS</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -164,7 +169,7 @@
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>MATS</string>
+				<string>BGRT</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -185,24 +190,22 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
+			<string>SSDT-DDGPU.aml</string>
 			<string>SSDT-Dell_FN.aml</string>
 			<string>SSDT-GPRW.aml</string>
-			<string>SSDT-IGPU.aml</string>
 			<string>SSDT-LPC.aml</string>
+			<string>SSDT-PCIList.aml</string>
 			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-SATA.aml</string>
+			<string>SSDT-SMBUS.aml</string>
 			<string>SSDT-XHC.aml</string>
 			<string>SSDT-XOSI.aml</string>
-			<string>SSDT-ALS0.aml</string>
-			<string>SSDT-PCIList.aml</string>
-			<string>SSDT-SMBUS.aml</string>
-			<string>SSDT-DDGPU.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 kext-dev-mode=1 -disablegfxfirmware</string>
+		<string>dart=0 darkwake=no nv_disable=1 kext-dev-mode=1 -disablegfxfirmware</string>
 		<key>DefaultVolume</key>
 		<string>macOS</string>
 		<key>NeverHibernate</key>
@@ -239,6 +242,8 @@
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
+		<key>LANInjection</key>
+		<true/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -249,6 +254,8 @@
 			<true/>
 			<key>Inject</key>
 			<true/>
+			<key>NameEH00</key>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<true/>
@@ -304,7 +311,7 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<false/>
+		<true/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
@@ -462,83 +469,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port 15-&gt;26</string>
+				<string>10.13+ 启动花屏修复</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g32MEA==
+				AQAAdSI=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.13.0,10.13.1,10.13.2,10.13.3
-</string>
+				<string>10.13.x</string>
 				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<string>IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>
-				g32MGw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port 15-&gt;26</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g32UDw+DlwQAAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.4,10.13.5</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g32UD5CQkJCQkA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port 15-&gt;26</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g32IDw+DpwQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g32IGg+DpwQ=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port 15-&gt;26</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g/sPD4MJBQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g/sPkJCQkJCQ
+				AQAA6yI=
 				</data>
 			</dict>
 		</array>
