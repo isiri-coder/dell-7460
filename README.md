@@ -85,6 +85,10 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-09-18
+
+- Frequency data is from SSDT-FREQ.aml now.
+
 2018-09-15
 
 - 10.14 的 EFI 更新

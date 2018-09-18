@@ -11,7 +11,7 @@
 			<key>Fixes</key>
 			<dict>
 				<key>FixRegions</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -186,16 +186,18 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
+			<string>SSDT-DDGPU.aml</string>
 			<string>SSDT-Dell_FN.aml</string>
+			<string>SSDT-FREQ.aml</string>
 			<string>SSDT-GPRW.aml</string>
 			<string>SSDT-LPC.aml</string>
+			<string>SSDT-PCIList.aml</string>
 			<string>SSDT-PNLF.aml</string>
+			<string>SSDT-RMCF.aml</string>
 			<string>SSDT-SATA.aml</string>
+			<string>SSDT-SMBUS.aml</string>
 			<string>SSDT-XHC.aml</string>
 			<string>SSDT-XOSI.aml</string>
-			<string>SSDT-PCIList.aml</string>
-			<string>SSDT-SMBUS.aml</string>
-			<string>SSDT-DDGPU.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -497,26 +499,6 @@
 				<key>Replace</key>
 				<data>
 				60ZI/wUCUgg=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit PMHeart)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g/sPD4MDBQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g/sPkJCQkJCQ
 				</data>
 			</dict>
 		</array>
