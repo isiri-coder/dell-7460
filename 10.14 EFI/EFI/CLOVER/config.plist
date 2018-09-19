@@ -202,30 +202,16 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>Arguments</key>
+		<string>igfxrst=1 bpr_probedelay=50</string>
 		<key>DefaultVolume</key>
 		<string>macOS</string>
-		<key>NeverHibernate</key>
-		<false/>
 		<key>NoEarlyProgress</key>
 		<true/>
-		<key>Secure</key>
-		<false/>
 		<key>Timeout</key>
 		<integer>1</integer>
 		<key>XMPDetection</key>
 		<false/>
-	</dict>
-	<key>BootGraphics</key>
-	<dict>
-		<key>UIScale</key>
-		<integer>1</integer>
-	</dict>
-	<key>CPU</key>
-	<dict>
-		<key>HWPEnable</key>
-		<true/>
-		<key>UseARTFrequency</key>
-		<true/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -399,15 +385,15 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
-		<true/>
+		<false/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
 		<key>KernelLapic</key>
-		<true/>
+		<false/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
@@ -441,8 +427,6 @@
 				</data>
 			</dict>
 		</array>
-		<key>KernelXCPM</key>
-		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
