@@ -83,6 +83,10 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2018-10-25
+
+- 更新 clover
+
 2018-09-28
 
 - 常规更新，修改音频 ID 注入方式
