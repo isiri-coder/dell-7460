@@ -3,6 +3,8 @@ dell-7460-7560-hackintosh
 
 戴尔燃7000黑苹果安装和日常使用EFI
 
+https://zhih.me/dell-7460-7560-hackintosh/
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **目录**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -45,7 +47,7 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 此一键命令可开启接近原生的HIDPI设置，不需要RDM软件即可在系统显示器设置中设置
 
-仓库地址：[一键开启HIDPI](https://github.com/xzhih/one-key-hidpi)
+[一键开启HIDPI](https://zhih.me/one-key-hidpi/)
 
 效果：
 
@@ -82,6 +84,15 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 ```
 
 ### Change log
+
+2018-11-15
+
+- 更新 clover
+- 更新一些 kext
+
+2018-10-25
+
+- 更新 clover
 
 2018-10-25
 
