@@ -85,6 +85,10 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2019-01-02
+
+- 新年快乐
+
 2018-12-08
 
 - 更新 voodoo 触控板驱动，解决触控板设置空白的问题(虽然没卵用)
