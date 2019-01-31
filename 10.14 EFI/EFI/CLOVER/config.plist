@@ -8,18 +8,20 @@
 		<true/>
 		<key>DSDT</key>
 		<dict>
+			<key>Debug</key>
+			<false/>
+			<key>DropOEM_DSM</key>
+			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixAirport</key>
-				<false/>
 				<key>FixRegions</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change _DSM to XDSM</string>
+					<string>change _DSM to XSDM</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -33,7 +35,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change OSID to XSID</string>
+					<string>change OSID to IDOS</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -42,7 +44,7 @@
 					</data>
 					<key>Replace</key>
 					<data>
-					WFNJRA==
+					SURPUw==
 					</data>
 				</dict>
 				<dict>
@@ -61,6 +63,48 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>change HDAS to HDEF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SERBUw==
+					</data>
+					<key>Replace</key>
+					<data>
+					SERFRg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change HECI to IMEI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SEVDSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					SU1FSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>chang BRT6 to BRTX</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					IEJSVDY=
+					</data>
+					<key>Replace</key>
+					<data>
+					IEJSVFg=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
 					<false/>
@@ -71,20 +115,6 @@
 					<key>Replace</key>
 					<data>
 					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change BRT6 to BRTX</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					IEJSVDY=
-					</data>
-					<key>Replace</key>
-					<data>
-					IEJSVFg=
 					</data>
 				</dict>
 				<dict>
@@ -103,93 +133,75 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change 6D03 TO 6D00 PRW </string>
+					<string>change 6D03 to 6D00</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					Cm0KAw==
+					oG2gAw==
 					</data>
 					<key>Replace</key>
 					<data>
-					Cm0KAA==
+					oG2gAA==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change GPRW to XPRW</string>
+					<string>change _PTS to ZPTS</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					R1BSVwI=
+					X1BUUw==
 					</data>
 					<key>Replace</key>
 					<data>
-					WFBSVwI=
+					WlBUUw==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
+					<string>change _WAK to ZWAK</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					SERBUw==
+					X1dBSw==
 					</data>
 					<key>Replace</key>
 					<data>
-					SERFRg==
+					WldBSw==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _PTS to ZPTS(shut)</string>
+					<string>change _LID0 to _LID</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BUUwE=
+					TElEMA==
 					</data>
 					<key>Replace</key>
 					<data>
-					WlBUUwE=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _WAK to ZWAK(wake)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1dBSwE=
-					</data>
-					<key>Replace</key>
-					<data>
-					WldBSwE=
+					TElEXw==
 					</data>
 				</dict>
 			</array>
+			<key>ReuseFFFF</key>
+			<false/>
 		</dict>
 		<key>DropTables</key>
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>MATS</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>BGRT</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
 		<true/>
+		<key>FixMCFG</key>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>Generate</key>
@@ -197,8 +209,6 @@
 				<key>PluginType</key>
 				<true/>
 			</dict>
-			<key>NoOemTableId</key>
-			<false/>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
@@ -212,8 +222,8 @@
 			<string>SSDT-SATA.aml</string>
 			<string>SSDT-XOSI.aml</string>
 			<string>SSDT-SMBUS.dsl</string>
-			<string>SSDT-PTSWAK####.aml</string>
 			<string>SSDT-P_W-EXT3-LID-dell.aml</string>
+			<string>SSDT-PTSWAK####.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -242,17 +252,6 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>AFGLowPowerState</key>
-			<true/>
-			<key>Inject</key>
-			<string>No</string>
-			<key>ResetHDA</key>
-			<true/>
-		</dict>
-		<key>LANInjection</key>
-		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
@@ -284,9 +283,21 @@
 				<data>
 				AQAAAA==
 				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
 				<key>framebuffer-con1-enable</key>
 				<data>
 				AQAAAA==
+				</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>
+				EgAAAA==
 				</data>
 				<key>framebuffer-con1-type</key>
 				<data>
@@ -338,14 +349,13 @@
 			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>GUI</key>
 	<dict>
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
-			<string>Recovery</string>
 		</array>
 		<key>Mouse</key>
 		<dict>
@@ -397,6 +407,10 @@
 		<false/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
+		</array>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>

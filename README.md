@@ -85,6 +85,13 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2019-02-01
+
+- 把原来 10.13 的彻底更新
+- 10.14 新增 `config-Spoof.plist`，此配置仿冒 skylake 解决了 HD620 在 10.14 下的模糊不正常问题。同时，使用此配置也能有更好的 hidpi 设置样式，而且 10.13 也可以用，值得一试
+- 更新黑果小兵的 ALCPlugFix
+- 更新 Lilu 相关 kext
+
 2019-01-02
 
 - 新年快乐
