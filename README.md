@@ -85,6 +85,10 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2019-02-23
+
+- 修复一些问题
+
 2019-02-01
 
 - 把原来 10.13 的彻底更新
