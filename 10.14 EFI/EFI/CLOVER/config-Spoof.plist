@@ -10,6 +10,8 @@
 		<dict>
 			<key>Fixes</key>
 			<dict>
+				<key>AddPNLF</key>
+				<true/>
 				<key>FixRegions</key>
 				<true/>
 			</dict>
@@ -59,34 +61,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>chang BRT6 to BRTX</string>
 					<key>Disabled</key>
 					<false/>
@@ -125,20 +99,6 @@
 					<key>Replace</key>
 					<data>
 					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change 6D03 to 6D00</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					oG2gAw==
-					</data>
-					<key>Replace</key>
-					<data>
-					oG2gAA==
 					</data>
 				</dict>
 				<dict>
@@ -183,6 +143,20 @@
 					TElEXw==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R1BSVwI=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwI=
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -202,11 +176,15 @@
 		</array>
 		<key>FixHeaders</key>
 		<true/>
+		<key>ResetAddress</key>
+		<string>0x0CF9</string>
+		<key>ResetValue</key>
+		<string>0x06</string>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>igfxrst=1 lilucpu=8</string>
+		<string>lilucpu=8 gfxrst=1</string>
 		<key>DefaultVolume</key>
 		<string>macOS</string>
 		<key>NoEarlyProgress</key>
@@ -293,12 +271,12 @@
 				<data>
 				AAAwAQ==
 				</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>
-				AAAAgA==
-				</data>
 			</dict>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -309,8 +287,6 @@
 			<true/>
 			<key>Inject</key>
 			<true/>
-			<key>NameEH00</key>
-			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>

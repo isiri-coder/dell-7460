@@ -85,6 +85,13 @@ SSDT hotpatch来自[RehabMan](https://github.com/RehabMan/OS-X-Clover-Laptop-Con
 
 ### Change log
 
+2019-03-11
+
+- 关闭TCPKeepAliveDuringSleep和NotificationWake，解决了睡眠后可能会导致的RTC唤醒问题，建议都更新
+- 一些常规的clover更新
+- 修改了一些SSDT hotpatch
+- 删除SSDT-PNLF.aml，改为使用WhateverGreen直接支持的亮度调节方式
+
 2019-02-23
 
 - 修复一些问题
