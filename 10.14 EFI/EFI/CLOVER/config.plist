@@ -157,6 +157,20 @@
 					WFBSVwI=
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(UPRW,2,N) to XPRW, pair with SSDT-UPRW.aml</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					VVBSVwpwEg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwpwEg==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
