@@ -19,45 +19,33 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change _DSM to XSDM</string>
+					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
+					<data>T1NJRA==</data>
 					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
+					<data>WFNJRA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change OSID to IDOS</string>
+					<string>Rename _OSI to XOSI (OS)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					T1NJRA==
-					</data>
+					<data>X09TSQ==</data>
 					<key>Replace</key>
-					<data>
-					SURPUw==
-					</data>
+					<data>WE9TSQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
+					<string>Rename _DSM to XDSM (NVDIMM)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
+					<data>X0RTTQ==</data>
 					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
+					<data>WERTTQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -65,27 +53,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					IEJSVDY=
-					</data>
+					<data>IEJSVDY=</data>
 					<key>Replace</key>
-					<data>
-					IEJSVFg=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
+					<data>IEJSVFg=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -93,13 +63,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
+					<data>U0FUMA==</data>
 					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
+					<data>U0FUQQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -107,13 +73,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1BUUw==
-					</data>
+					<data>X1BUUw==</data>
 					<key>Replace</key>
-					<data>
-					WlBUUw==
-					</data>
+					<data>WlBUUw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -121,27 +83,19 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1dBSw==
-					</data>
+					<data>X1dBSw==</data>
 					<key>Replace</key>
-					<data>
-					WldBSw==
-					</data>
+					<data>WldBSw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _LID0 to _LID</string>
+					<string>change LID0 to _LID</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					TElEMA==
-					</data>
+					<data>TElEMA==</data>
 					<key>Replace</key>
-					<data>
-					TElEXw==
-					</data>
+					<data>TElEXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -149,27 +103,49 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					R1BSVwI=
-					</data>
+					<data>R1BSVwI=</data>
 					<key>Replace</key>
-					<data>
-					WFBSVwI=
-					</data>
+					<data>WFBSVwI=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(UPRW,2,N) to XPRW, pair with SSDT-UPRW.aml</string>
+					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					VVBSVwpwEg==
-					</data>
+					<data>SEVDSQ==</data>
 					<key>Replace</key>
-					<data>
-					WFBSVwpwEg==
-					</data>
+					<data>SU1FSQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change ECDV to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>RUNEVg==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GPI0 device _STA to XSTA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1NUQQCgCZNTQlJHAA==</data>
+					<key>Replace</key>
+					<data>WFNUQQCgCZNTQlJHAA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change I2C devices _CRS to XCRS</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0NSUwCgDg==</data>
+					<key>Replace</key>
+					<data>WENSUwCgDg==</data>
 				</dict>
 			</array>
 		</dict>
@@ -215,84 +191,46 @@
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
-				<data>
-				OAAAAA==
-				</data>
+				<data>OAAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,GfxYTile</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AAAWWQ==
-				</data>
+				<data>AAAWWQ==</data>
 				<key>device-id</key>
-				<data>
-				FlkAAA==
-				</data>
+				<data>FlkAAA==</data>
 				<key>disable-external-gpu</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-index</key>
-				<data>
-				/////w==
-				</data>
+				<data>/////w==</data>
 				<key>framebuffer-con2-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-fbmem</key>
-				<data>
-				AACQAA==
-				</data>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-portcount</key>
-				<data>
-				AgAAAA==
-				</data>
+				<data>AgAAAA==</data>
 				<key>framebuffer-stolenmem</key>
-				<data>
-				AAAwAQ==
-				</data>
+				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>
-				AAAAgA==
-				</data>
+				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel Iris Plus Graphics 650</string>
 			</dict>
@@ -304,7 +242,7 @@
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
 			<true/>
 			<key>HighCurrent</key>
@@ -367,7 +305,7 @@
 		<key>AppleIntelCPUPM</key>
 		<true/>
 		<key>AppleRTC</key>
-		<false/>
+		<true/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
 		<key>ForceKextsToLoad</key>
@@ -386,13 +324,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				ILniAAAADzA=
-				</data>
+				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
-				<data>
-				ILniAAAAkJA=
-				</data>
+				<data>ILniAAAAkJA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -400,15 +334,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				sABMi1Xw
-				</data>
+				<data>sABMi1Xw</data>
 				<key>MatchOS</key>
 				<string>10.13</string>
 				<key>Replace</key>
-				<data>
-				SIPEQF3D
-				</data>
+				<data>SIPEQF3D</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -416,15 +346,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRE
-				</data>
+				<data>igKEwHRE</data>
 				<key>MatchOS</key>
 				<string>10.13</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtE
-				</data>
+				<data>igKEwOtE</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -432,15 +358,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
+				<data>igKEwHRC</data>
 				<key>MatchOS</key>
 				<string>10.14.x</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
+				<data>igKEwOtC</data>
 			</dict>
 		</array>
 		<key>KernelXCPM</key>
