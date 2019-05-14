@@ -83,7 +83,7 @@
 					<key>MouseWakeFirst</key>
 					<false/>
 					<key>WakeDelay</key>
-					<integer>0</integer>
+					<integer>10</integer>
 				</dict>
 				<key>HPQOEM</key>
 				<dict>
