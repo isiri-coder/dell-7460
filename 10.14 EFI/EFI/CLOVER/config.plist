@@ -244,6 +244,8 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>
 				OAAAAA==
@@ -257,12 +259,10 @@
 				</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AAAWGQ==
+				AAAWWQ==
 				</data>
-				<key>device-id</key>
-				<data>
-				FhkAAA==
-				</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
 				<key>disable-external-gpu</key>
 				<data>
 				AQAAAA==
@@ -315,6 +315,12 @@
 				<data>
 				AAAwAQ==
 				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==
+				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
