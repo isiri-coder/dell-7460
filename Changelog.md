@@ -1,5 +1,11 @@
 ## Change log
 
+2019-06-11
+
+- 更新 clover
+- 更新 lilu 相关
+- 支持 macOS 10.15
+
 2019-05-14
 
 - 更新使用群友 Grason Chan 的 clover 主题 [Minimalism](https://github.com/grasonchan/clover-themes)
